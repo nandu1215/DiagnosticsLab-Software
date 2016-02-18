@@ -1,0 +1,96 @@
+/*started template for all the pages*/
+
+.padding {
+    background: #FEFEFA;
+    color: black;
+    overflow-x: hidden;
+}
+
+.header {
+    background: -webkit-linear-gradient(#9C27B0, #00BCD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    float: left;
+    opacity: 0.7;
+}
+
+.img {
+    border-radius: 50%;
+    width: 23%;
+    margin-top: -1%;
+}
+
+.buttons {
+    float: right;
+    margin-top: -6%;
+    margin-left: 2%;
+    padding: 0% 6%;
+    font-size: 20px;
+}
+
+.button {
+    background: #00BCD4;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.runner {
+    padding: 0.5% 0%;
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #9C27B0, #673AB7, #3F51B5, #00BCD4);
+}
+
+footer {
+    position: fixed !important;
+    right: 0%;
+    bottom: 0;
+    height: auto;
+    left: 0%;
+    width: 100%;
+    padding: 1%;
+    background: #00BCD4;
+    text-align: center;
+    visibility: visible;
+}
+
+
+/*login.html classes*/
+
+.asideclass {
+    float: right;
+    display: inline;
+    width: 35%;
+}
+
+aside div {
+    margin: 15px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 0px;
+}
+
+.contents {
+    height: 100%;
+    margin-bottom: 40%;
+}
+
+/*home.html*/
+.imagenav{
+	display: inline;
+	list-style-type: circle;
+	position: bottom;
+}

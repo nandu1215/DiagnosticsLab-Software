@@ -10,6 +10,7 @@
     background: -webkit-linear-gradient(#9C27B0, #00BCD4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 0.5%;
      /*background: #FEFEFA;*/
 }
 
@@ -73,6 +74,11 @@ footer {
     display: inline;
     width: 35%;
 }
+.asideclass sup{
+	color: red;
+}
+}
+
 .contents {
     height: 100%;
     margin-bottom: 40%;
@@ -99,11 +105,6 @@ aside div {
 }
 
 /*signup.html*/
-
-.signuppadding{
- overflow-x: hidden;
-
-}
 
 .signup{
 	padding:5%;

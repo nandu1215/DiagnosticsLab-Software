@@ -116,9 +116,9 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 
 }
 .signup aside{
-	width:35%;
-	float:right;
-	margin-bottom: 10%;
+	width:30%;
+	float:left;
+	margin-bottom:10%;
 	padding: 2%;
 }
 .signup .textbox{
@@ -128,7 +128,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 
 .signup fieldset{
 	border-radius: 5%;
-	border-color: #00BCD4;
+	border-color: transparent;
+	/*border-color: #00BCD4;*/
 	background-color: white;
 	color:#1A237E;
 	font-size: 20px;
@@ -151,10 +152,11 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 .main{
 	/*margin-top: 45%;*/
 	vertical-align: center;
-	float:left;
+	float:right;
 	width: 55%;
 	color: white;
 	font-size:150%;
+	padding:1%;
 }
 
 .main div{
@@ -164,6 +166,28 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 .signup sup{
 	color: red;
 }
+/*CreatingTestCase.html*/
+.navigation{
+	align-items: center;	
+	width: 15%;
+	position: absolute;
+	background: #00BCD4;
+    color: white;
+   top: 45%;
+    margin-right: 5px;
+    height: 100%;
+    vertical-align: middle;
+    bottom: 0px;
+}
+
+.navigation ul{
+	list-style-type: none;
+}
+.testcasedisplay{
+	height: 100%;
+	padding: 50%;
+}
+
 
 /*for displaying error*/
 .error {

@@ -51,7 +51,7 @@
 }
 
 footer {
-    position: fixed !important;
+    /*position: fixed !important;*/
     right: 0%;
     bottom: 0;
     height: auto;
@@ -61,6 +61,7 @@ footer {
     background: #00BCD4;
     text-align: center;
     visibility: visible;
+    clear: both;
 }
 
 
@@ -71,6 +72,11 @@ footer {
     display: inline;
     width: 35%;
 }
+.contents {
+    height: 100%;
+    margin-bottom: 40%;
+}
+
 
 aside div {
     margin: 15px;
@@ -83,14 +89,58 @@ aside div {
     padding: 0px;
 }
 
-.contents {
-    height: 100%;
-    margin-bottom: 40%;
-}
 
 /*home.html*/
 .imagenav{
 	display: inline;
 	list-style-type: circle;
 	position: bottom;
+}
+
+/*signup.html*/
+.signup{
+	padding:5%;
+}
+.signup aside{
+	width:35%;
+	float:right;
+	margin-bottom: 10%;
+	padding: 2%;
+}
+.signup .textbox{
+	width: 105%;
+	font-size: 16px;
+
+
+}
+.signup fieldset{
+	border-radius: 10%;
+	border-color: #00BCD4;
+	background-color: white;
+	color:#1565c0;
+	font-size: 100%;
+}
+
+.signup fieldset button{
+	   background: #00BCD4;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+.main{
+	/*margin-top: 45%;*/
+	vertical-align: center;
+	float:left;
+	width: 55%;
+}
+
+.main div{
+	margin-top: 50%;
 }

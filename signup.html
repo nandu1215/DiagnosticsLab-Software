@@ -1,80 +1,106 @@
 <!Doctype html>
 <html>
-<head>
-	<title>DiagnosticsLab</title>
-	    <link rel="stylesheet" href="stylesheet.css" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<head>
+    <title>DiagnosticsLab</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="padding">
-<header>
-	<div class="logo">
-	<img class="img" src="img/Icon.jpg">
-	</div>
-	<div >
-	<h1 class="header">Diagnostics Lab</h1>
-	<h2 class="header">Sub Header</h2>
-	</div>
-	<div class="buttons">
-	<button class="button">Login</button>
-	<button class="button">Sign Up</button>
-	</div>
-</header>
-<section>
-<div class="runner">
-</div>
-</section>
-<section class="signup">
-<section class="main">
-<div> Its Always good to stay connected and know whats happening inside you!</div>
-</section>
-<aside>
-<form action="" method="post">
-<fieldset>
-<legend>Sign up</legend>
-<div class="signlegend">
-<div>
-<label>Id</label><br>
-<input type="text" name="id" id="id" placeholder="Enter Your Id " class="textbox"/>
-</div>
-<div>
-<label>Name</label><br>
-<input type="text" name="name" id="name" placeholder="John" class="textbox"/>
-</div>
-<div>
-<label>User Name</label><br>
-<input type="text" name="username" id="username" placeholder="username" class="textbox"/>
-</div>
-<div>
-<label>PassWord</label><br>
-<input type="password" name="password" id="password" placeholder="Password" class="textbox"/>
-</div>
-<div>
-<label>Confirm Password</label><br>
-<input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirmpassword" class="textbox"/>
-</div>
-<div>
-<label>Email ID</label><br>
-<input type="email" name="email" id="email" placeholder="example@domain.com" class="textbox"/>
-</div>
-<div>
-<label>Phone Number</label><br>
-<input type="number" name="phonenumber" id="phonenumber" placeholder="xxx-xxx xxxx" class="textbox"/>
-</div>
-<div>
-<input type="radio" name="selection" id="techn">Tech</input>
-<input type="radio" name="selection" id="patient">Patient</input>
-</div>
-<div>
-<button type="submit">Sign Up</button>
-</div>
-</div>
-</fieldset>
-</form>
-</aside>
-</section>
-<footer>
-<p>	Diagnostics Lab</p>
-</footer>
+
+<body class="signuppadding">
+    <header>
+        <div class="logo">
+            <img class="img" src="img/Icon.jpg">
+        </div>
+        <div>
+            <h1 class="header">Diagnostics Lab</h1>
+            <h2 class="header">Sub Header</h2>
+        </div>
+        <div class="buttons">
+            <button class="button">Login</button>
+            <button class="button">Sign Up</button>
+        </div>
+    </header>
+    <section>
+        <div class="runner">
+        </div>
+    </section>
+    <section class="signup">
+        <section class="main">
+            <div> Its Always good to stay connected and know whats happening inside you!</div>
+        </section>
+        <aside>
+            <form action="" method="post">
+                <fieldset>
+                    <div class="signlegend">
+                        <div>
+                            <div id="error" class="errortext"></div>
+                            <label>Id<sup>*</sup></label>
+                            <br>
+                            <input type="text" name="id" id="id" placeholder="Enter Your Id " class="textbox" required />
+                        </div>
+                        <div>
+                            <label>Name<sup>*</sup></label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="John" class="textbox" required />
+                        </div>
+                        <div>
+                            <label>User Name<sup>*</sup></label>
+                            <br>
+                            <input type="text" name="username" id="username" placeholder="username" class="textbox" required/>
+                        </div>
+                        <div>
+                            <label>PassWord<sup>*</sup></label>
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Password" class="textbox" required/>
+                        </div>
+                        <div>
+                            <label>Confirm Password<sup>*</sup></label>
+                            <br>
+                            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirmpassword" class="textbox" onblur="comparePassword()" required />
+                        </div>
+                        <div>
+                            <label>Email ID<sup>*</sup></label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="example@domain.com" class="textbox" required/>
+                        </div>
+                        <div>
+                            <label>Phone Number<sup>*</sup></label>
+                            <br>
+                            <input type="number" name="phonenumber" id="phonenumber" placeholder="xxx-xxx xxxx" class="textbox" required/>
+                        </div>
+                        <div>
+                            <input type="radio" name="selection" id="techn">Tech</input>
+                            <input type="radio" name="selection" id="patient" checked>Patient</input>
+                        </div>
+                        <div>
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </aside>
+    </section>
+    <footer>
+        <p> Diagnostics Lab</p>
+    </footer>
+
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript">
+    function comparePassword() {
+        var primepassword, secondpassword;
+        primepassword = document.getElementById("password");
+        secondpassword = document.getElementById("confirmpassword");
+        if (primepassword.value !== confirmpassword.value) {
+            document.getElementById("error").innerHTML = "Confirm Password mismatch";
+            addClass("#password", 'error');
+            addClass("#confirmpassword", 'error');
+        } else {
+        	removeClass("#password", 'error');
+            removeClass("#confirmpassword", 'error');
+        }
+    }
+    </script>
 </body>
+
 </html>

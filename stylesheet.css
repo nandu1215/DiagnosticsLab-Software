@@ -10,6 +10,7 @@
     background: -webkit-linear-gradient(#9C27B0, #00BCD4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+     /*background: #FEFEFA;*/
 }
 
 .logo {
@@ -98,8 +99,20 @@ aside div {
 }
 
 /*signup.html*/
+
+.signuppadding{
+ overflow-x: hidden;
+
+}
+
 .signup{
 	padding:5%;
+background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/pic3.jpg");
+ background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
 }
 .signup aside{
 	width:35%;
@@ -108,21 +121,21 @@ aside div {
 	padding: 2%;
 }
 .signup .textbox{
-	width: 105%;
+	width: 100%;
 	font-size: 16px;
-
-
 }
+
 .signup fieldset{
-	border-radius: 10%;
+	border-radius: 5%;
 	border-color: #00BCD4;
 	background-color: white;
-	color:#1565c0;
-	font-size: 100%;
+	color:#1A237E;
+	font-size: 20px;
+	opacity: 1;
 }
 
 .signup fieldset button{
-	   background: #00BCD4;
+	background: #00BCD4;
     border: none;
     color: white;
     margin: 5px;
@@ -139,8 +152,23 @@ aside div {
 	vertical-align: center;
 	float:left;
 	width: 55%;
+	color: white;
+	font-size:150%;
 }
 
 .main div{
 	margin-top: 50%;
+}
+
+.signup sup{
+	color: red;
+}
+
+/*for displaying error*/
+.error {
+	border-color: #ef5350;
+}
+
+.errortext{
+	color:  #ef5350;
 }

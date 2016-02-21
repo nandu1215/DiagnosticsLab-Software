@@ -1,5 +1,10 @@
 /*started template for all the pages*/
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
 .padding {
     background: #FEFEFA;
     color: black;
@@ -26,11 +31,13 @@
 }
 
 .buttons {
+	position: relative;
     float: right;
-    margin-top: -6%;
+    margin-top: -10%;
     margin-left: 2%;
     padding: 0% 6%;
     font-size: 20px;
+    overflow: hidden;
 }
 
 .button {
@@ -53,7 +60,7 @@
 }
 
 footer {
-    /*position: fixed !important;*/
+    position: fixed;
     right: 0%;
     bottom: 0;
     height: auto;
@@ -77,12 +84,13 @@ footer {
 .asideclass sup{
 	color: red;
 }
-}
+
 
 .contents {
     height: 100%;
-    margin-bottom: 40%;
+    position: relative;
 }
+
 
 
 aside div {
@@ -168,16 +176,31 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 }
 /*CreatingTestCase.html*/
 .navigation{
-	align-items: center;	
-	width: 15%;
 	position: absolute;
+	align-items: center;	
+	width: 20%;
+	float: left;
 	background: #00BCD4;
     color: white;
-   top: 45%;
-    margin-right: 5px;
+   	left: 0;
+    margin-right: 15px;
+    top:23.5%;
     height: 100%;
     vertical-align: middle;
-    bottom: 0px;
+    bottom: 0;
+    min-height: 1000px;
+    scroll-behavior: auto;
+    z-index: -1;
+
+}
+.navigation li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navigation li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
 
 .navigation ul{

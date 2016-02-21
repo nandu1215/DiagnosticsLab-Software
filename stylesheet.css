@@ -197,3 +197,79 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 .errortext{
 	color:  #ef5350;
 }
+/*Cheng's code*/
+/*patient_dashboard classes*/
+.patient_dashboard a{
+    text-decoration: none;
+    color: #888;
+}
+.patient_dashboard .right{
+    width: 20%;
+    float:left;
+    display: inline;
+}
+.patient_dashboard .rights{
+    display: block;
+    padding: 15%;
+    margin: 3%;
+    box-shadow: 5px 5px 5px #888;
+    color: #888;
+    text-align: center;
+    font-family: 1.2em;
+}
+.patient_dashboard .menuChoice{
+    display: fixed;
+    display: block;
+}
+.patient_dashboard .menu{
+    width: 20%;
+    height: 100%;
+    float:left;
+    display: inline;
+}
+.patient_dashboard .menuChoice{
+    display: block;
+    padding: 7% 2% 7% 2%;
+    margin: auto;
+    border:1% solid #B0E0E6;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 2em;
+
+}
+.patient_dashboard .report{
+    width: 60%;
+    float:left;
+    display: inline;
+}
+.patient_dashboard .reports{
+    display: block;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px #888;
+    background-color: 
+}
+/*for patient View*/
+.patient_dashboard #reportTitle{
+    text-align: center;
+    width: 100%;
+}
+.patient_dashboard #reportContent{
+    box-shadow: 5px 5px 5px 5px #888;
+    float:left;
+    margin-left: 20%;
+    padding: 30%;
+
+}
+.patient_dashboard #back{
+    clear:both;
+    background-color: #888;
+    box-shadow: 1px 1px 1px 1px #FEFEFA;
+    padding:1% 2% 1% 2%;
+    float:right;
+    margin-right:20%;
+}
+.patient_dashboard #back a{
+    color:#FEFEFA;
+}

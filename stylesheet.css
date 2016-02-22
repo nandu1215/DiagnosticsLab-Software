@@ -67,7 +67,7 @@ footer {
     left: 0%;
     width: 100%;
     padding: 1%;
-    background: #00BCD4;
+    background: #009aaa;
     text-align: center;
     visibility: visible;
     clear: both;
@@ -188,7 +188,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     height: 100%;
     vertical-align: middle;
     bottom: 0;
-    min-height: 1000px;
+    /*min-height: 600px;*/
     scroll-behavior: auto;
     z-index: -1;
 
@@ -225,7 +225,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     float: right;
     width: 75%;
     text-align: left;
-    margin-top: 10%;
+    margin-top: 1%;
+    margin-bottom: 5%;
     margin-left: 35%;
 
 }
@@ -348,3 +349,97 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 #leftButton {
     margin-left:30%;
 }
+
+table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 500px;
+        margin-top: 10%;
+    }
+
+    th {
+        background-color: #acf;
+        text-align: center;
+        padding: 8px;
+        }
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+tr:nth-child(even){background-color: #def}
+
+.tableDiv {
+    overflow: auto;
+    clear:both;
+}
+
+
+button{
+      position: relative;
+      border: none;
+      outline:none;
+      cursor: pointer;
+      /*padding: 10px 30px;*/
+      border-radius: 1px;
+      font-size: 14px;
+      /*margin-right: 10px;*/
+    }
+
+
+    /* reference http://codepen.io/Craigtut/pen/dIfzv */
+    .ripple{
+        overflow:hidden;
+        float: right;
+    }
+
+    .ripple-effect{
+      position: absolute;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background: white;
+
+        
+      animation: ripple-animation 2s;
+    }
+
+    @keyframes ripple-animation {
+        from {
+          transform: scale(1);
+          opacity: 0.4;
+        }
+        to {
+          transform: scale(100);
+          opacity: 0;
+        }
+    }
+
+    .container div{
+        display:inline-block;
+        width:130px;
+        padding: 30%;
+    }
+
+    #reset {
+     float: left;   
+    } 
+
+    .paitentInfo{
+        float: left;
+    }
+    #testSearch{
+        margin: 8px;
+        width: 70%;
+    }
+
+    #patientID{
+        margin: 16px; 
+        vertical-align: center;
+
+    }
+
+    #patientName {
+       margin: 16px; 
+       vertical-align: center;
+    }

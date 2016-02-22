@@ -193,6 +193,10 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     z-index: -1;
 
 }
+
+.navigation li {
+    margin-bottom: 20%;
+}
 .navigation li a.active {
     background-color: #4CAF50;
     color: white;
@@ -208,6 +212,8 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 
 .navigation ul{
 	list-style-type: none;
+    position: absolute;
+    top: 15%;
 }
 .testcasedisplay{
 	height: 100%;
@@ -315,4 +321,30 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 }
 .patient_dashboard #back a{
     color:#FEFEFA;
+}
+#registerForm {
+    width: 60%;
+    margin-top:1%;
+    text-align: right;
+}
+
+
+.inputField {
+    margin-right: 20%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.inputBox {
+    margin:1%;
+    border: solid 1px black;
+}
+.registerButton {
+    float: left;
+    margin-right: 10%;
+}
+#last {
+    margin-bottom: 5%;
+}
+#leftButton {
+    margin-left:30%;
 }

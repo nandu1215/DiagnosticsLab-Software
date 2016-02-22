@@ -202,6 +202,9 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     background-color: #555;
     color: white;
 }
+.navigation li a{
+    text-decoration: none;
+}
 
 .navigation ul{
 	list-style-type: none;
@@ -211,6 +214,23 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
 	padding: 50%;
 }
 
+
+.techcontents{
+    float: right;
+    width: 75%;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 35%;
+
+}
+
+.techcontents ul{
+    list-style-type: none;
+}
+
+.techcontents  a{
+     text-decoration: none;
+}
 
 /*for displaying error*/
 .error {

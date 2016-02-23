@@ -1,48 +1,92 @@
 <!Doctype html>
 <html>
+
 <head>
-	<title>DiagnosticsLab</title>
-	    <link rel="stylesheet" href="stylesheet.css" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="js/util.js"></script>
-
+    <title>DiagnosticsLab</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/util.js"></script>
 </head>
-<body class="padding">
-<header>
-	<div class="logo">
-	<img class="img" src="img/Icon.jpg">
-	</div>
-	<div >
-	<h1 class="header">Diagnostics Lab</h1>
-	<h2 class="header">Sub Header</h2>
-	</div>
-	<div class="buttons">
-	<a href="login.html">
-	<button class="button">Log Out</button></a>
-	</div>
-</header>
-<section>
-<div class="runner">
-</div>
-</section>
-<section class="contents">
-<nav class="navigation">
-<ul>
-<li><a href="tech-viewhome.html">Home</li>
-<li><a href="Registernewpatient.html">Register New Patient</a></li>
-<li><a href="viewTestResult.html">View Test Result</a></li>
-<li><a href="entertestresult.html">Enter Test Result</a></li>
-<li><a href="CreatingTestCase.html">Order New Test</a></li>
-</ul>
-</nav>
-<section class="techcontents">
-<!-- write code here -->
 
-</section>
-</section>
-<footer>
-<p>	Diagnostics Lab</p>
-</footer>
+<body class="padding">
+    <header>
+        <div class="logo">
+            <img class="img" src="img/Icon.jpg">
+        </div>
+        <div>
+            <h1 class="header">Diagnostics Lab</h1>
+            <h2 class="header">Sub Header</h2>
+        </div>
+        <div class="buttons">
+            <a href="login.html">
+                <button class="button">Log Out</button>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="runner">
+        </div>
+    </section>
+    <section class="contents">
+        <nav class="navigation">
+            <ul>
+                <li><a href="tech-viewhome.html">Home</li>
+<li><a href="Registernewpatient.html">Register New Patient</a></li>
+                <li><a href="viewTestResult.html">View Test Result</a></li>
+                <li><a href="entertestresult.html">Enter Test Result</a></li>
+                <li><a href="CreatingTestCase.html">Order New Test</a></li>
+            </ul>
+        </nav>
+        <section class="techcontents">
+            <form>
+                Patient ID:
+                <input type="text" name="PatientID"> Report ID:
+                <input type="text" name="ReportID">
+                <br>
+            </form>
+            <div style="clear: both;"></div>
+            <br>
+            <div id="words">
+                <h1>Test Report</h1>
+            </div>
+            <div >
+            <table style="width:80%">
+                <tr id="table1">
+                    <th>Test Names</th>
+                    <th>Test Values</th>
+                    <th>Normal Values</th>
+                </tr>
+                <tr>
+                    <td>Test 1</td>
+                    <td><input type="text" placeholder="normal value" id="test1" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue1" class="input" readonly></td>
+                </tr>
+                <tr>
+                    <td>Test 2</td>
+                    <td><input type="text" placeholder="normal value" id="test2" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue2" class="input" readonly></td>
+                </tr>
+                <tr>
+                    <td>Test 3</td>
+                    <td><input type="text" placeholder="normal value" id="test3" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue3" class="input" readonly></td>
+                </tr>
+                <tr>
+                    <td>Test 4</td>
+                    <td><input type="text" placeholder="normal value" id="test4" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue4" class="input" readonly></td>
+                </tr>
+            </table>
+        </div class="buttons">
+            <button type="button" class="buttont spacing">Reset</button>
+            <button type="button" class="buttont spacing" >Preview</button>
+            <button type="button" class="buttont spacing" >Save</button>
+        </section>
+    </section>
+    <footer>
+        <p> Diagnostics Lab</p>
+    </footer>
 </body>
+
 </html>

@@ -9,6 +9,7 @@ p {
     background: #FEFEFA;
     color: black;
     overflow-x: hidden;
+    margin: 0%;
 }
 
 .header {
@@ -22,6 +23,7 @@ p {
 .logo {
     float: left;
     opacity: 0.7;
+    margin: 2%;
 }
 
 .img {
@@ -81,7 +83,7 @@ footer {
     display: inline;
     width: 35%;
 }
-.asideclass sup{
+sup{
 	color: red;
 }
 
@@ -358,16 +360,19 @@ table {
     }
 
     th {
-        background-color: #acf;
+        background-color:#00ACC1;
         text-align: center;
         padding: 8px;
         }
     td {
         text-align: left;
-        padding: 8px;
+        padding:0% 8px;
     }
+th,td{
+  border-bottom: 1px solid #00ACC1;
+}
 
-tr:nth-child(even){background-color: #def}
+tr:nth-child(even){background-color:#B2EBF2}
 
 .tableDiv {
     overflow: auto;
@@ -442,4 +447,40 @@ button{
     #patientName {
        margin: 16px; 
        vertical-align: center;
+    }
+.buttont {
+    background: #00BCD4;
+    border: none;
+    color: white;
+    margin: 1px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+    .spacing{
+        padding:1%;
+        margin:5%;
+        float: left;
+        width: -1%;
+    }
+
+    .input{
+        padding:5%;
+        border:none;
+        margin: 0%;
+    }
+
+    .newtable{
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 1%;
+        /*text-align: center;*/
+    }
+
+    .centeralign{
+        margin-left: 20%;
     }

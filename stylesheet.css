@@ -1,8 +1,45 @@
 /*started template for all the pages*/
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 130px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    width: 370px;
+    margin: 10px;
+    float: left;
+    opacity: 0.7;
+}
+
+.logo img {
+    width: 103px;
+    height: 103px;
+    float: left;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+header .buttons {
+    position: absolute;
+    right: 5px;
+    bottom: 25px;
+}
+
 p {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .padding {
@@ -17,41 +54,33 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0.5%;
-     /*background: #FEFEFA;*/
+    /*background: #FEFEFA;*/
 }
 
-.logo {
-    float: left;
-    opacity: 0.7;
-    margin: 2%;
-}
-
-.img {
-    border-radius: 50%;
-    width: 23%;
-    margin-top: -1%;
-}
-
-.buttons {
-	position: relative;
-    float: right;
-    margin-top: -10%;
-    margin-left: 2%;
-    padding: 0% 6%;
-    font-size: 20px;
-    overflow: hidden;
-}
-
+// .buttons {
+//  position: relative;
+//     float: right;
+//     margin-top: -10%;
+//     margin-left: 2%;
+//     padding: 0% 6%;
+//     font-size: 20px;
+//     overflow: hidden;
+// }
 .button {
     background: #00BCD4;
     border: none;
     color: white;
     margin: 5px;
-    padding: 15px 25px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 5px;
+}
+
+.secondary {
+    background: #64B5F6;
 }
 
 .runner {
@@ -82,17 +111,15 @@ footer {
     display: inline;
     width: 35%;
 }
-sup{
-	color: red;
-}
 
+sup {
+    color: red;
+}
 
 .contents {
     height: 100%;
     position: relative;
 }
-
-
 
 aside div {
     margin: 15px;
@@ -107,46 +134,53 @@ aside div {
 
 
 /*home.html*/
-.imagenav{
-	display: inline;
-	list-style-type: circle;
-	position: bottom;
+
+.imagenav {
+    display: inline;
+    list-style-type: circle;
+    position: bottom;
 }
+
 
 /*signup.html*/
 
-.signup{
-	padding:5%;
-background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/pic3.jpg");
- background-repeat: no-repeat;
-  background-size: 100%;
-
+.signup {
+    padding: 25px;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/pic3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-}
-.signup aside{
-	width:30%;
-	float:left;
-	margin-bottom:10%;
-	padding: 2%;
-}
-.signup .textbox{
-	width: 100%;
-	font-size: 16px;
+.signup::after {
+    display: block;
+    clear: both;
+    content: " ";
 }
 
-.signup fieldset{
-	border-radius: 5%;
-	border-color: transparent;
-	/*border-color: #00BCD4;*/
-	background-color: white;
-	color:#1A237E;
-	font-size: 20px;
-	opacity: 1;
+.signup aside {
+    width: 45%;
+    float: left;
+    margin-bottom: 10%;
+    padding: 2%;
 }
 
-.signup fieldset button{
-	background: #00BCD4;
+.signup .textbox {
+    width: 100%;
+    font-size: 16px;
+}
+
+.signup fieldset {
+    border-radius: 4px;
+    border-color: transparent;
+    /*border-color: #00BCD4;*/
+    background-color: white;
+    color: #1A237E;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.signup fieldset button {
+    background: #00BCD4;
     border: none;
     color: white;
     margin: 5px;
@@ -158,46 +192,49 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     border-radius: 10%;
 }
 
-.main{
-	/*margin-top: 45%;*/
-	vertical-align: center;
-	float:right;
-	width: 55%;
-	color: white;
-	font-size:150%;
-	padding:1%;
-}
-
-.main div{
-	margin-top: 50%;
-}
-
-.signup sup{
-	color: red;
-}
-/*CreatingTestCase.html*/
-.navigation{
-	position: absolute;
-	align-items: center;	
-	width: 20%;
-	float: left;
-	background: #00BCD4;
+.main {
+    /*margin-top: 45%;*/
+    vertical-align: center;
+    float: right;
+    width: 45%;
     color: white;
-   	left: 0;
+    font-size: 150%;
+    padding: 1%;
+}
+
+.main div {
+    margin-top: 50%;
+}
+
+.signup sup {
+    color: red;
+}
+
+
+/*CreatingTestCase.html*/
+
+.navigation {
+    position: absolute;
+    align-items: center;
+    width: 20%;
+    float: left;
+    background: #00BCD4;
+    color: white;
+    left: 0;
     margin-right: 15px;
-    top:23.5%;
+    top: 23.5%;
     height: 100%;
     vertical-align: middle;
     bottom: 0;
     /*min-height: 600px;*/
     scroll-behavior: auto;
     z-index: -1;
-
 }
 
 .navigation li {
     margin-bottom: 20%;
 }
+
 .navigation li a.active {
     background-color: #4CAF50;
     color: white;
@@ -207,59 +244,68 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     background-color: #555;
     color: white;
 }
-.navigation li a{
+
+.navigation li a {
     text-decoration: none;
 }
 
-.navigation ul{
-	list-style-type: none;
+.navigation ul {
+    list-style-type: none;
     position: absolute;
     top: 15%;
 }
-.testcasedisplay{
-	height: 100%;
-	padding: 50%;
+
+.testcasedisplay {
+    height: 100%;
+    padding: 50%;
 }
 
-
-.techcontents{
+.techcontents {
     float: right;
     width: 75%;
     text-align: left;
     margin-top: 1%;
     margin-bottom: 5%;
     margin-left: 35%;
-
 }
 
-.techcontents ul{
+.techcontents ul {
     list-style-type: none;
 }
 
-.techcontents  a{
-     text-decoration: none;
+.techcontents a {
+    text-decoration: none;
 }
+
 
 /*for displaying error*/
+
 .error {
-	border-color: #ef5350;
+    border-color: #ef5350;
 }
 
-.errortext{
-	color:  #ef5350;
+.errortext {
+    color: #ef5350;
 }
+
+
 /*Cheng's code*/
+
+
 /*patient_dashboard classes*/
-.patient_dashboard a{
+
+.patient_dashboard a {
     text-decoration: none;
     color: #888;
 }
-.patient_dashboard .right{
+
+.patient_dashboard .right {
     width: 20%;
-    float:left;
+    float: left;
     display: inline;
 }
-.patient_dashboard .rights{
+
+.patient_dashboard .rights {
     display: block;
     padding: 15%;
     margin: 3%;
@@ -268,185 +314,210 @@ background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("img/p
     text-align: center;
     font-family: 1.2em;
 }
-.patient_dashboard .menuChoice{
+
+.patient_dashboard .menuChoice {
     display: fixed;
     display: block;
 }
-.patient_dashboard .menu{
+
+.patient_dashboard .menu {
     width: 20%;
     height: 100%;
-    float:left;
+    float: left;
     display: inline;
 }
-.patient_dashboard .menuChoice{
+
+.patient_dashboard .menuChoice {
     display: block;
     padding: 7% 2% 7% 2%;
     margin: auto;
-    border:1% solid #B0E0E6;
+    border: 1% solid #B0E0E6;
     font-weight: bold;
     font-family: cursive;
     font-size: 2em;
-
 }
-.patient_dashboard .report{
+
+.patient_dashboard .report {
     width: 60%;
-    float:left;
+    float: left;
     display: inline;
 }
-.patient_dashboard .reports{
+
+.patient_dashboard .reports {
     display: block;
     text-align: center;
     font-family: cursive;
     font-size: 1.5em;
     box-shadow: 5px 5px 5px #888;
-    background-color: 
+    background-color:
 }
+
+
 /*for patient View*/
-.patient_dashboard #reportTitle{
+
+.patient_dashboard #reportTitle {
     text-align: center;
     width: 100%;
 }
-.patient_dashboard #reportContent{
+
+.patient_dashboard #reportContent {
     box-shadow: 5px 5px 5px 5px #888;
-    float:left;
+    float: left;
     margin-left: 20%;
     padding: 30%;
-
 }
-.patient_dashboard #back{
-    clear:both;
+
+.patient_dashboard #back {
+    clear: both;
     background-color: #888;
     box-shadow: 1px 1px 1px 1px #FEFEFA;
-    padding:1% 2% 1% 2%;
-    float:right;
-    margin-right:20%;
+    padding: 1% 2% 1% 2%;
+    float: right;
+    margin-right: 20%;
 }
-.patient_dashboard #back a{
-    color:#FEFEFA;
+
+.patient_dashboard #back a {
+    color: #FEFEFA;
 }
+
 #registerForm {
     width: 60%;
-    margin-top:1%;
+    margin-top: 1%;
     text-align: right;
 }
 
+input {
+    height: 35px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #ccc;
+}
 
 .inputField {
     margin-right: 20%;
     margin-bottom: 5%;
     font-size: 20px;
 }
+
 .inputBox {
-    margin:1%;
+    margin: 1%;
     border: solid 1px black;
 }
+
 .registerButton {
     float: left;
     margin-right: 10%;
 }
+
 #last {
     margin-bottom: 5%;
 }
+
 #leftButton {
-    margin-left:30%;
+    margin-left: 30%;
 }
 
 table {
-        border-collapse: collapse;
-        width: 100%;
-        min-width: 500px;
-        margin-top: 10%;
-    }
-
-    th {
-        background-color:#00ACC1;
-        text-align: center;
-        padding: 8px;
-        }
-    td {
-        text-align: left;
-        padding:0% 8px;
-    }
-th,td{
-  border-bottom: 1px solid #00ACC1;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+    margin-top: 10%;
 }
 
-tr:nth-child(even){background-color:#B2EBF2}
+th {
+    background-color: #00ACC1;
+    text-align: center;
+    padding: 8px;
+}
+
+td {
+    text-align: left;
+    padding: 0% 8px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #00ACC1;
+}
+
+tr:nth-child(even) {
+    background-color: #B2EBF2
+}
 
 .tableDiv {
     overflow: auto;
-    clear:both;
+    clear: both;
+}
+
+button {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /*padding: 10px 30px;*/
+    border-radius: 1px;
+    font-size: 14px;
+    /*margin-right: 10px;*/
 }
 
 
-button{
-      position: relative;
-      border: none;
-      outline:none;
-      cursor: pointer;
-      /*padding: 10px 30px;*/
-      border-radius: 1px;
-      font-size: 14px;
-      /*margin-right: 10px;*/
+/* reference http://codepen.io/Craigtut/pen/dIfzv */
+
+.ripple {
+    overflow: hidden;
+    float: right;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+    from {
+        transform: scale(1);
+        opacity: 0.4;
     }
-
-
-    /* reference http://codepen.io/Craigtut/pen/dIfzv */
-    .ripple{
-        overflow:hidden;
-        float: right;
+    to {
+        transform: scale(100);
+        opacity: 0;
     }
+}
 
-    .ripple-effect{
-      position: absolute;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      background: white;
+.container div {
+    display: inline-block;
+    width: 130px;
+    padding: 30%;
+}
 
-        
-      animation: ripple-animation 2s;
-    }
+#reset {
+    float: left;
+}
 
-    @keyframes ripple-animation {
-        from {
-          transform: scale(1);
-          opacity: 0.4;
-        }
-        to {
-          transform: scale(100);
-          opacity: 0;
-        }
-    }
+.paitentInfo {
+    float: left;
+}
 
-    .container div{
-        display:inline-block;
-        width:130px;
-        padding: 30%;
-    }
+#testSearch {
+    margin: 8px;
+    width: 70%;
+}
 
-    #reset {
-     float: left;   
-    } 
+#patientID {
+    margin: 16px;
+    vertical-align: center;
+}
 
-    .paitentInfo{
-        float: left;
-    }
-    #testSearch{
-        margin: 8px;
-        width: 70%;
-    }
+#patientName {
+    margin: 16px;
+    vertical-align: center;
+}
 
-    #patientID{
-        margin: 16px; 
-        vertical-align: center;
-
-    }
-
-    #patientName {
-       margin: 16px; 
-       vertical-align: center;
-    }
 .buttont {
     background: #00BCD4;
     border: none;
@@ -459,34 +530,97 @@ button{
     font-size: 16px;
 }
 
+.spacing {
+    padding: 1%;
+    margin: 5%;
+    float: left;
+    width: -1%;
+}
 
-    .spacing{
-        padding:1%;
-        margin:5%;
-        float: left;
-        width: -1%;
+.input {
+    padding: 5%;
+    border: none;
+    margin: 1%;
+}
+
+.newtable {
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 1%;
+    /*text-align: center;*/
+}
+
+.centeralign {
+    margin-left: 20%;
+}
+
+.selected {
+    background: #26A69A;
+    ;
+    color: #880E4F;
+}
+
+
+/* mobiles Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    /*Header styles*/
+    header {
+        height: 100px;
+    }
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+    .logo h1 {
+        font-size: 22px
+    }
+    header .buttons {
+        right: 0;
+        bottom: 0;
     }
 
-    .input{
-        padding:5%;
-        border:none;
-        margin: 1%;
+    /*Login page styles*/
+    .info {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .asideclass {
+        float: none;
+    }
+    .asideclass label,
+    .asideclass input {
+        display: block;
+    }
+    .asideclass button {
+        margin-left: 15px;
     }
 
-    .newtable{
-        width: 50%;
-        margin-left: 20%;
-        margin-bottom: 1%;
-        /*text-align: center;*/
+    /*Signup page*/
+    .signup .main {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0
     }
 
-    .centeralign{
-        margin-left: 20%;
+    .signup .main div {
+        margin-top: 0;
     }
 
-
-    .selected{
-
-background:#26A69A;;
-color:#880E4F;
+    .signup aside {
+        width: 100%;
+        float: none;
     }
+
+    .signup aside div {
+        margin: 10px;
+    }
+
+    .signup fieldset {
+        margin: 0;  
+        padding: 0; 
+    }
+}
+

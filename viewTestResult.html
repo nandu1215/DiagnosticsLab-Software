@@ -16,7 +16,6 @@
         </div>
         <div>
             <h1 class="header">Diagnostics Lab</h1>
-
         </div>
         <div class="buttons">
             <a href="login.html">
@@ -47,13 +46,13 @@
                 <button id="search" onclick="clicked()">search</button>
             </div>
             <div id="layouthidden">
-            <div class="tableDiv">
-                <table id="searchResult" class="newtable">
-                    <tr>
-                        <th>Test Cases</th>
-                    </tr>
-                </table>
-            </div>
+                <div class="tableDiv">
+                    <table id="searchResult" class="newtable">
+                        <tr>
+                            <th>Test Cases</th>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="buttonContainer" id="buttonContainer">
                 <button class="button centeralign" id="reset">Reset</button>
@@ -83,7 +82,7 @@
             "testname": "3 hours Glucose Test"
         }]
     };
-var selected=false;
+    var selected = false;
     var text = test.testcase;
 
     function clicked() {
@@ -101,11 +100,11 @@ var selected=false;
     };
 
     function viewclicked() {
-    	if(selected){
-        window.location.href = 'testview.html';
-    }else{
-    	$('#error').html="Please Set the Test Case";
-    }
+        if (selected) {
+            window.location.href = 'testview.html';
+        } else {
+            $('#error').html = "Please Set the Test Case";
+        }
     };
 
     function myFunction() {
@@ -122,21 +121,21 @@ var selected=false;
         });
     }
     $(document).ready(function() {
-        // alert("jquery load");
         var table = $('#searchResult');
         $("#searchResult tbody").delegate('tr', 'click', function(event) {
-var current=$(this).addClass('selected');
-        	$(this).parent("tbody").find("tr").removeClass('selected')
-        	current.parent("tbody").find("tr").removeClass('selected')
-        	$(this).addClass('selected');
-        	selected=true;
+            var current = $(this).addClass('selected');
+            $(this).parent("tbody").find("tr").removeClass('selected')
+            current.parent("tbody").find("tr").removeClass('selected')
+            $(this).addClass('selected');
+            selected = true;
         });
 
         $("#reset").click(function() {
             $('#searchResult').css('visibility', 'hidden');
-$('buttonContainer').css('visibility', 'hidden');
+            $('buttonContainer').css('visibility', 'hidden');
             $('#patientID').val('')
-            selected=false;
+            selected = false;
+            // removeClass("#errortext", 'error');
         });
 
         $('#search').click(function(event) {
@@ -146,7 +145,7 @@ $('buttonContainer').css('visibility', 'hidden');
                 $("#error").html("Please Enter the Patient Id to View Test Results");
                 return;
             } else {
-            $('#layouthidden').css('visibility', 'visible');
+                $('#layouthidden').css('visibility', 'visible');
             }
         });
     });

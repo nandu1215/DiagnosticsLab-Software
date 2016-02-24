@@ -39,21 +39,19 @@
     </ul>
     </nav>
 <section class="techcontents" >
-
- <!-- text input to enter paitient Id -->
+ <div id="error" class="errortext"></div>
     <div class = "paitentInfo" >
-        <label>Patient ID:
-            <input id="patientID" placeholder="xxxxxx" ></label>
+        <label>Patient ID:<sup>*</sup>
+            <input id="patientID" placeholder="xxxxxx" required></label>
     </div>
-
     <div class="paitentInfo" > 
       <label>  Patient Name:
             <input id="patientName" placeholder="xxxxxx" ></label>
     </div>
     <div style="clear: both">
-       <label> Test Search:
-            <input id="testSearch"  placeholder="xxxxxx" >
-              <button onclick="myFunction()">search</button></label>
+       <label> Test Search:<sup>*</sup>
+            <input id="testSearch"  placeholder="xxxxxx" required>
+              <button id="search" onclick="clicked()">search</button></label>
     </div>
   
     <div class="tableDiv" >
@@ -73,7 +71,7 @@
     </div>
     <div class="buttonContainer">
         <button class="button centeralign" id="reset">Reset</button>
-        <button class="button centeralign">Create</button>
+        <button class="button centeralign" id="create" onclick="createclicked()">Create</button>
     </div>
 </section>
 
@@ -98,6 +96,42 @@ var test = { "testcase": [{ "testname": "Blood Test" },
 };
 
 var text = test.testcase;
+function clicked() {
+     var patientID, testcase;
+        patientID = document.getElementById("patientID");
+        testcase = document.getElementById("testSearch");
+        if (patientID.value === "" || testcase.value === "") {
+            document.getElementById("error").innerHTML = "Enter patientID or TestCase to Search";
+            addClass("#patientID", 'error');
+            addClass("#testSearch", 'error');
+        } else {
+            removeClass("#patientID", 'error');
+            removeClass("#testSearch", 'error');
+            document.getElementById('error').innerHTML="";
+            myFunction();
+        }
+}; 
+
+function createclicked() {
+     var patientID, testcase,row;
+        patientID = document.getElementById("patientID");
+        testcase = document.getElementById("testSearch");
+        row=document.getElementById("selectedTest").rows.length;
+        if (patientID.value === "" || testcase.value === "" || row < 2)  {
+            if(patientID.value === "" || testcase.value === ""){
+            document.getElementById("error").innerHTML = "Enter patientID or Test Search";
+            }else{
+               document.getElementById("error").innerHTML = "Select the Test Case To move Futher"; 
+            }
+
+            addClass("#patientID", 'error');
+            addClass("#testSearch", 'error');
+        } else {
+            removeClass("#patientID", 'error');
+            removeClass("#testSearch", 'error');
+            document.getElementById('error').innerHTML="";
+        }
+}; 
 
 function myFunction() {
  document.getElementById("searchResult").style.visibility = "visible";  
@@ -130,12 +164,22 @@ $("#reset").click(function(){
   $('#selectedTest').css('visibility', 'hidden');  
   $('#searchResult').css('visibility', 'hidden');
   $('#testSearch').val('');
+  $('#patientID').val('');
+});
 });
 
-});
+// $('#search').on('click',function(){
+//     if(('#patientID').val()=='' || (('#testSearch').val()==''){
+//         $('#error').val('Please Enter PatientId or Test Case to Search');
+//     }else{
+//         alert('inside else');
+//         myFunction();
+//     }
+// });
+// });
 
 </script>
-
+<script type="text/javascript" src="js/lib.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </body>
 </html>

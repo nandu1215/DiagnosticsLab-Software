@@ -471,7 +471,7 @@ button{
     .input{
         padding:5%;
         border:none;
-        margin: 0%;
+        margin: 1%;
     }
 
     .newtable{
@@ -483,4 +483,11 @@ button{
 
     .centeralign{
         margin-left: 20%;
+    }
+
+
+    .selected{
+
+background:#26A69A;;
+color:#880E4F;
     }

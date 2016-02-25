@@ -114,9 +114,7 @@
             console.log(i.testname);
             var newrow = table.insertRow(1);
             var cell = newrow.insertCell(0);
-            // cell.innerHTML = text[i.testname];
             cell.innerHTML = i.testname;
-            // cell.className="dynamic";
             console.log(text[i.testname]);
         });
     }
@@ -124,18 +122,20 @@
         var table = $('#searchResult');
         $("#searchResult tbody").delegate('tr', 'click', function(event) {
             var current = $(this).addClass('selected');
-            $(this).parent("tbody").find("tr").removeClass('selected')
-            current.parent("tbody").find("tr").removeClass('selected')
+            $(this).parent("tbody").find("tr").removeClass('selected');
+            current.parent("tbody").find("tr").removeClass('selected');
             $(this).addClass('selected');
             selected = true;
         });
 
-        $("#reset").click(function() {
+        $("#reset").click(function(event) {
+            event.preventDefault(); 
             $('#searchResult').css('visibility', 'hidden');
             $('buttonContainer').css('visibility', 'hidden');
-            $('#patientID').val('')
+            $('#patientID').val('');
             selected = false;
-            // removeClass("#errortext", 'error');
+            removeClass('#patientID','error');
+            document.getElementById('error').innerHTML = "";
         });
 
         $('#search').click(function(event) {
@@ -143,6 +143,7 @@
             if (id == "") {
                 event.preventDefault();
                 $("#error").html("Please Enter the Patient Id to View Test Results");
+                addClass("#patientID",'error');
                 return;
             } else {
                 $('#layouthidden').css('visibility', 'visible');

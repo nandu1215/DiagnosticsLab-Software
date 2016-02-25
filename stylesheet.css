@@ -621,7 +621,7 @@ button {
         height: 80px;
     }
     .logo h1 {
-        font-size: 22px
+        font-size: 18px
     }
     header .buttons {
         right: 0;
@@ -642,6 +642,10 @@ button {
     }
     .asideclass button {
         margin-left: 15px;
+    }
+
+    .button{
+        padding: 6px;
     }
 
     /*Signup page*/
@@ -669,5 +673,39 @@ button {
         margin: 0;  
         padding: 0; 
     }
+
+    .navigation{
+        visibility: hidden;
+    }
+    .techcontents{
+         margin-left: -28%;
+    }
+    .paitentInfo{
+         margin-left: -28%;
+         font-size: 14px;
+    }
+    .buttonContainer{
+        margin-top: 25px;
+        margin-left: -40px;
+    }
+    .tableDiv{
+        margin-left: -100px;
+    max-width: 300px;
+    text-align: left;
+    }
+th,td{
+    text-align: left;
+}
+form{
+        margin-left: -28px;
+    font-size: 15px;
+}
+.divPadding{
+    margin-top: 20px;   
+}
+.techcontents .words h1{
+    margin-left: -45px;
+}
+
 }
 

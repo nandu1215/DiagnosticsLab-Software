@@ -703,8 +703,28 @@ form{
 .divPadding{
     margin-top: 20px;   
 }
-.techcontents .words h1{
+    .words h1{
     margin-left: -45px;
+}
+
+.table{
+    margin-left: -22%;
+    max-width: 70%;
+}
+div::after{
+    clear: both;
+}
+.searchtab label{
+    clear: both;
+        margin: -78px;
+    font-size: 12px;
+
+}
+label{
+    text-align: right;
+}
+#id label{
+        padding: 20px;
 }
 
 }

@@ -38,7 +38,7 @@
     </nav>
 <section class="techcontents" >
  <div id="error" class="errortext"></div>
-    <div class = "paitentInfo" >
+    <div class = "paitentInfo" id="id">
         <label>Patient ID:<sup>*</sup>
             <input id="patientID" placeholder="xxxxxx" required></label>
     </div>
@@ -46,7 +46,7 @@
       <label>  Patient Name:
             <input id="patientName" placeholder="xxxxxx" ></label>
     </div>
-    <div style="clear: both">
+    <div class="searchtab" style="clear:both">
        <label> Test Search:<sup>*</sup>
             <input id="testSearch"  placeholder="xxxxxx" required>
               <button id="search" onclick="clicked()">search</button></label>
@@ -163,6 +163,7 @@ $("#reset").click(function(){
   $('#searchResult').css('visibility', 'hidden');
   $('#testSearch').val('');
   $('#patientID').val('');
+  $('#patientName').val('');
 });
 });
 

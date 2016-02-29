@@ -46,3 +46,4 @@ if( animation === false ) {
   css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n";
 document.body.appendChild(css); 
 }
+

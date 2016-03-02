@@ -57,15 +57,16 @@ p {
     /*background: #FEFEFA;*/
 }
 
-// .buttons {
-//  position: relative;
-//     float: right;
-//     margin-top: -10%;
-//     margin-left: 2%;
-//     padding: 0% 6%;
-//     font-size: 20px;
-//     overflow: hidden;
-// }
+
+ .buttons {
+  position: relative;
+     float: right;
+     margin-top: -10%;
+     margin-left: 2%;
+     padding: 0% 6%;
+    font-size: 20px;
+     overflow: hidden;
+ }
 .button {
     background: #00BCD4;
     border: none;
@@ -229,6 +230,11 @@ aside div {
     /*min-height: 600px;*/
     scroll-behavior: auto;
     z-index: -1;
+    min-width: 135px;
+}
+
+.addnav{
+    display: none;
 }
 
 .navigation li {
@@ -725,6 +731,18 @@ label{
 }
 #id label{
         padding: 20px;
+}
+
+
+.addnav{
+      clear: both;
+    padding: 5px;
+    margin:10px 0px 0px 0px;
+    background: #00BCD4;
+    color: white;
+}
+.addnav::after{
+    clear: both;
 }
 
 }
